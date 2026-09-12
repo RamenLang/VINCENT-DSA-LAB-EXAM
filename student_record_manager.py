@@ -1,18 +1,3 @@
-"""
-ITECC04 - Data Structures and Algorithms
-Prelim Laboratory Examination
-PART I - Student Record Manager
-Data Structure: Dynamic Array ADT (implemented manually)
-
-This program does NOT use any built-in Python collection that automatically
-grows (no list.append, no list.insert, no list.remove, no ArrayList-style
-helpers). The underlying storage is a fixed-size Python list used purely as
-raw memory (like a plain array in Java/C++). All growing, shifting, and
-searching logic is written by hand inside the DynamicArray class.
-"""
-
-
-
 class Student:
     def __init__(self, student_id, name, course, year_level):
         self.student_id = student_id

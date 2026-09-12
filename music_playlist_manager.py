@@ -1,15 +1,3 @@
-"""
-ITECC04 - Data Structures and Algorithms
-Prelim Laboratory Examination
-PART II - Music Playlist Manager
-Data Structure: Singly Linked List ADT (implemented manually)
-
-Nodes are created and linked by hand using plain objects with a "next"
-reference. No built-in linked list / list.insert / list.pop features are
-used to manage the chain - all traversal, insertion, and deletion logic is
-written explicitly.
-"""
-
 class Song:
     def __init__(self, song_id, title, artist, duration):
         self.song_id = song_id
