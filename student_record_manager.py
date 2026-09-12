@@ -26,7 +26,6 @@ class DynamicArray:
 
 
     def resize(self):
-        """Doubles the capacity of the underlying array and copies old data over."""
         old_array = self.array
         new_capacity = self.capacity * 2
         new_array = [None] * new_capacity
@@ -58,7 +57,6 @@ class DynamicArray:
         return False
 
     def search(self, student_id):
-        """Returns the index of the student with the given ID, or -1 if not found."""
         for i in range(self.count):
             if self.array[i].student_id == student_id:
                 return i
@@ -119,11 +117,10 @@ def read_year_level(prompt):
         value = input(prompt).strip()
         if value.isdigit() and 1 <= int(value) <= 6:
             return int(value)
-        print("Please enter a valid year level (a whole number, e.g. 1-6).")
+        print("Please enter a valid year level.")
 
 
 def read_year_level_optional(prompt, current_value):
-    """Same validation as read_year_level, but an empty entry keeps current_value."""
     while True:
         value = input(prompt).strip()
         if value == "":

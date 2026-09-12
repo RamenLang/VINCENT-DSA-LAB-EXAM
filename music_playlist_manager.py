@@ -50,7 +50,6 @@ class LinkedList:
         self.count += 1
 
     def insert_at(self, position, song):
-        """position is 1-based: 1 = first node, size()+1 = after the last node."""
         if position < 1 or position > self.count + 1:
             return False
 
